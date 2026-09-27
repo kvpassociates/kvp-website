@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KVP ASSOCIATES | Feroke, Calicut</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+
+        <div class="logo">
+    <img src="logo.png" alt="KVP ASSOCIATES Logo">
+</div>
+
+      <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">KVP ASSOCIATES</p>
+
+            <h1>
+                Smart Solutions<br>
+                <span>For Modern Kitchens.</span>
+            </h1>
+
+            <p class="hero-text">
+                Quality kitchen accessories and hardware solutions
+                available at KVP ASSOCIATES, Feroke, Ramanattukara,
+                Calicut.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="btn primary">
+                    View Products
+                </a>
+
+                <a href="tel:7510933313" class="btn secondary">
+                    Call Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+    <section id="products" class="products-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    OUR PRODUCTS
+                </p>
+
+                <h2>
+                    Product Catalog
+                </h2>
+
+                <p>
+                    Browse our range of kitchen accessories and
+                    storage solutions.
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCT SEARCH -->
+            <div class="product-search">
+
+                <input
+                    type="text"
+                    id="productSearch"
+                    placeholder="Search products..."
+                    onkeyup="searchProducts()"
+                >
+
+            </div>
+
+
+            <!-- ================= PRODUCT GRID ================= -->
+            <div class="product-grid" id="productGrid">
+
+
+                <!-- PRODUCT 01 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="pullouts.jpeg"
+                            alt="Pullouts"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-number">
+                            PRODUCT 01
+                        </span>
+
+                        <h3>Pullouts</h3>
+
+                        <p>
+                            Kitchen pullout storage solution designed
+                            for convenient and organized storage.
+                        </p>
+
+                        <button
+                            class="enquiry-btn"
+                            onclick="sendEnquiry('Pullouts')"
+                        >
+                            Enquire Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 02 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Tandem box.jpeg"
+                            alt="Slim Tandem Box"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-number">
+                            PRODUCT 02
+                        </span>
+
+                        <h3>Slim Tandem Box</h3>
+
+                        <p>
+                            Slim storage drawer solution for modern
+                            kitchen cabinets.
+                        </p>
+
+                        <button
+                            class="enquiry-btn"
+                            onclick="sendEnquiry('Slim Tandem Box')"
+                        >
+                            Enquire Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 04 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="hydraulichinge.jpg"
+                            alt="Soft Close Cabinet Hinge"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-number">
+                            PRODUCT 03
+                        </span>
+
+                        <h3>Soft Close Cabinet Hinge</h3>
+
+                        <p>
+                            Hydraulic soft-close hinge suitable for
+                            kitchen cabinets and wardrobes.
+                        </p>
+
+                        <button
+                            class="enquiry-btn"
+                            onclick="sendEnquiry('Soft Close Cabinet Hinge')"
+                        >
+                            Enquire Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 05 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="screw.jpg"
+                            alt="Stainless Steel Self-Tapping Screws"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-number">
+                            PRODUCT 04
+                        </span>
+
+                        <h3>Stainless Steel Self-Tapping Screws</h3>
+
+                        <p>
+                            Stainless steel screws for cabinet,
+                            furniture and general installation
+                            applications.
+                        </p>
+
+                        <button
+                            class="enquiry-btn"
+                            onclick="sendEnquiry('Stainless Steel Self-Tapping Screws')"
+                        >
+                            Enquire Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCT 07 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="pullwaste.jpg"
+                            alt="Kitchen Waste Bin Pull-Out"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-number">
+                            PRODUCT 06
+                        </span>
+
+                        <h3>Kitchen Waste Bin Pull-Out</h3>
+
+                        <p>
+                            Built-in pull-out waste bin solution for
+                            organized and convenient kitchen waste
+                            management.
+                        </p>
+
+                        <button
+                            class="enquiry-btn"
+                            onclick="sendEnquiry('Kitchen Waste Bin Pull-Out')"
+                        >
+                            Enquire Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 08 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Tall pantry.jpeg"
+                            alt="Tall Pantry Pull-Out"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-number">
+                            PRODUCT 07
+                        </span>
+
+                        <h3>Tall Pantry Pull-Out</h3>
+
+                        <p>
+                            Tall cabinet storage system designed to
+                            organize bottles, groceries and kitchen
+                            supplies.
+                        </p>
+
+                        <button
+                            class="enquiry-btn"
+                            onclick="sendEnquiry('Tall Pantry Pull-Out')"
+                        >
+                            Enquire Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 09 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="magiccorner.jpg"
+                            alt="Corner Storage Pull-Out"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-number">
+                            PRODUCT 08
+                        </span>
+
+                        <h3>Corner Storage Pull-Out</h3>
+
+                        <p>
+                            Space-saving corner storage system for
+                            making better use of difficult-to-reach
+                            cabinet areas.
+                        </p>
+
+                        <button
+                            class="enquiry-btn"
+                            onclick="sendEnquiry('Corner Storage Pull-Out')"
+                        >
+                            Enquire Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 10 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="pulldown.jpg"
+                            alt="Pull-Down Wall Cabinet Rack"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-number">
+                            PRODUCT 09
+                        </span>
+
+                        <h3>Pull-Down Wall Cabinet Rack</h3>
+
+                        <p>
+                            Pull-down storage rack for convenient
+                            access to items stored inside upper
+                            kitchen cabinets.
+                        </p>
+
+                        <button
+                            class="enquiry-btn"
+                            onclick="sendEnquiry('Pull-Down Wall Cabinet Rack')"
+                        >
+                            Enquire Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 11 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Pots & pans pullout.jpg"
+                            alt="Pan Hanger Rack"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-number">
+                            PRODUCT 10
+                        </span>
+
+                        <h3>Pan Hanger Rack</h3>
+
+                        <p>
+                            Sliding kitchen cabinet rack for organized
+                            hanging storage of pans and cookware.
+                        </p>
+
+                        <button
+                            class="enquiry-btn"
+                            onclick="sendEnquiry('Pan Hanger Rack')"
+                        >
+                            Enquire Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- END PRODUCT GRID -->
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+<section class="why-us" id="why-us">
+    <div class="section-title">
+        <h2>Why Choose KVP Associates?</h2>
+        <p>Quality products and reliable service for your kitchen and furniture needs.</p>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="why-icon">✓</div>
+            <h3>Quality Products</h3>
+            <p>We provide reliable kitchen and furniture hardware products.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">★</div>
+            <h3>Wide Product Range</h3>
+            <p>Explore a wide range of kitchen accessories and storage solutions.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">₹</div>
+            <h3>Competitive Pricing</h3>
+            <p>Quality products at competitive prices for your requirements.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">☎</div>
+            <h3>Customer Support</h3>
+            <p>Contact us for product enquiries and assistance.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- OUR SERVICES -->
+<section class="services" id="services">
+    <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Solutions for modern kitchens and furniture.</p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Kitchen Accessories</h3>
+            <p>
+                Kitchen storage and organization accessories
+                designed for convenient everyday use.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Cabinet Hardware</h3>
+            <p>
+                Hinges, screws and other hardware products
+                for kitchen and furniture applications.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Storage Solutions</h3>
+            <p>
+                Pull-outs, baskets, pantry systems and
+                other practical storage solutions.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Furniture Fittings</h3>
+            <p>
+                Functional fittings and accessories for
+                modern furniture requirements.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about-section">
+
+        <div class="container about-content">
+
+            <div>
+
+                <p class="section-label">
+                    ABOUT KVP ASSOCIATES
+                </p>
+
+                <h2>
+                    Quality products for
+                    modern kitchens.
+                </h2>
+
+            </div>
+
+            <div>
+
+                <p>
+                    KVP ASSOCIATES provides kitchen accessories and
+                    storage solutions for modern homes and kitchens.
+                </p>
+
+                <p>
+                    Visit us at Feroke, Ramanattukara, Calicut or
+                    contact us for product information and enquiries.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact-section">
+
+        <div class="container contact-content">
+
+            <p class="section-label">
+                CONTACT US
+            </p>
+
+            <h2>
+                Need more information?
+            </h2>
+
+            <p>
+                Contact KVP ASSOCIATES for product details,
+                availability and enquiries.
+            </p>
+
+
+            <div class="contact-buttons">
+
+                <a
+                    href="tel:7510933313"
+                    class="btn primary"
+                >
+                    📞 Call 7510933313
+                </a>
+
+                <a
+                    href="https://wa.me/917510933313"
+                    class="btn whatsapp"
+                    target="_blank"
+                >
+                    💬 WhatsApp
+                </a>
+
+            </div>
+
+
+            <div class="contact-details">
+
+                <div>
+                    <strong>Location</strong>
+                    <span>
+                        Feroke, Ramanattukara, Calicut
+                    </span>
+                </div>
+
+                <div>
+                    <strong>Phone</strong>
+                    <span>
+                        7510933313
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="logo">
+                KVP <span>ASSOCIATES</span>
+            </div>
+
+            <p>
+                Feroke, Ramanattukara, Calicut
+            </p>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 KVP ASSOCIATES. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+
+        function toggleMenu() {
+            const nav = document.getElementById("navMenu");
+            nav.classList.toggle("active");
+        }
+
+
+        function searchProducts() {
+
+            const searchInput =
+                document.getElementById("productSearch");
+
+            const searchValue =
+                searchInput.value.toLowerCase().trim();
+
+            const products =
+                document.querySelectorAll(".product-card");
+
+            products.forEach(function(product) {
+
+                const productName =
+                    product.querySelector("h3")
+                    .textContent
+                    .toLowerCase();
+
+                const productDescription =
+                    product.querySelector("p")
+                    .textContent
+                    .toLowerCase();
+
+                if (
+                    productName.includes(searchValue) ||
+                    productDescription.includes(searchValue)
+                ) {
+                    product.style.display = "";
+                } else {
+                    product.style.display = "none";
+                }
+
+            });
+
+        }
+
+
+        function sendEnquiry(productName) {
+
+            const phoneNumber = "917510933313";
+
+            const message =
+                `Hello KVP ASSOCIATES, I am interested in the product: ${productName}. Please provide more details.`;
+
+            const whatsappURL =
+                `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+            window.open(whatsappURL, "_blank");
+
+        }
+
+
+        // Close mobile menu after clicking a link
+        document.querySelectorAll("#navMenu a").forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                document
+                    .getElementById("navMenu")
+                    .classList.remove("active");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
